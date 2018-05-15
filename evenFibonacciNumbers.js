@@ -5,25 +5,25 @@
 //By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 function nth_fib(n){
-	if(n <= 1) return 1;
+  if(n <= 1) return 1;
 
-	return nth_fib(n - 1) + nth_fib(n - 2);
+  return nth_fib(n - 1) + nth_fib(n - 2);
 }
 
 var fibs = [];
 var i = 1;
 var sum = 0;
 var overFourmil = function(num){
-	if(num > 3999999) return true;
+  if(num > 3999999) return true;
 }
 
 while(!fibs.some(overFourmil)){
-	fibs.push(nth_fib(i));
-	i++;
+  fibs.push(nth_fib(i));
+  i++;
 }
 
 for(i=0;i<=fibs.length-1;i++){
-	if(fibs[i] % 2 == 0){
-	  sum = sum + fibs[i];
-	}
+  if(fibs[i] % 2 == 0){
+    sum = sum + fibs[i];
+  }
 }
