@@ -15,8 +15,8 @@ while(answer==0){
   }
 
   if(divs.length == 20){
-  	answer = i;
-  	return answer;
+    answer = i;
+    return answer;
   }
 
   i++;
