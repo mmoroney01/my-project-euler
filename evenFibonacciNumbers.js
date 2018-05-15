@@ -27,5 +27,3 @@ for(i=0;i<=fibs.length-1;i++){
 	  sum = sum + fibs[i];
 	}
 }
-
-console.log(sum);
