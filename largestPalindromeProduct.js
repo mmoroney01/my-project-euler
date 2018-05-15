@@ -20,7 +20,7 @@ products = [];
 
 for(i = 100;i<=999;i++){
   for(j = 100;j<=999;j++){
-  	if(isPalindrome(i*j) == true){
+    if(isPalindrome(i*j) == true){
   	  products.push(i*j);
   	}
   }
